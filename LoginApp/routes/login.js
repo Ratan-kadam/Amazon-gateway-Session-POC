@@ -42,7 +42,8 @@ exports.logout = function(req,res){
        // console.log("session -------------- now  present " + req.session.username);
     }else{
         console.log("session not present .. redirecting to /");
-        res.redirect("/");
+        res.send({status:"session..not present.."});
+       // res.redirect("/");
 
     }
 
