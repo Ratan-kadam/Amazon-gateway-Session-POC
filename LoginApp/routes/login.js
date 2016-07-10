@@ -20,6 +20,8 @@ exports.cart = function(req,res){
 
     console.log(req.session.username);
     if(!req.session.username){
+        res.status="201";
+        res.send({status:201,myData:"session not present"});
         res.redirect('/');
     }else{
         res.status=200;
