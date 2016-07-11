@@ -20,7 +20,8 @@ submit : <button onclick="auth()">Submit</button>
     };
 
     var myajax = new XMLHttpRequest();
-     myajax.open('post',"/mylogin",true);
+   // myajax.open('post',"/mylogin",true);
+    myajax.open('post',"sampleProd/mylogin",true);  // aws versioning added
 
       myajax.setRequestHeader("Content-type", "application/json; charset=utf-8"); // imp
    // myajax.setRequestHeader("Content-length", payload.length);
